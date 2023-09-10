@@ -1,3 +1,6 @@
+:root {
+}
+
 button {
   background-color: #5cb85f;
   padding: 6px 12px;
@@ -10,6 +13,19 @@ header {
   height: 500px;
 }
 
-.hero {
-  height: 407px;
+.hero-text p {
+  font-size: 14px;
+  width: 468px;
+}
+
+.hero-img {
+  display: flex;
+
+  height: 437px;
+  align-items: end;
+}
+
+.hero-img img {
+  width: 715px;
+  height: 416px;
 }
