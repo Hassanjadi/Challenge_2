@@ -1,16 +1,35 @@
 :root {
+  --primary: #0d28a6;
+  --limegreen: #5cb85f;
+  --limegreen01: #f1f3ff;
+  --neutral: #151515;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Helvetica";
+}
+
+/* Hero */
+#hero {
+  background-color: var(--limegreen01);
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-size: 14px;
 }
 
 button {
-  background-color: #5cb85f;
+  background-color: var(--limegreen);
+  font-size: 14px;
   padding: 6px 12px;
   border: 0;
   color: #ffffff;
-}
-
-header {
-  background-color: #f1f3ff;
-  height: 500px;
 }
 
 .hero-text p {
@@ -20,12 +39,71 @@ header {
 
 .hero-img {
   display: flex;
-
   height: 437px;
   align-items: end;
 }
 
 .hero-img img {
-  width: 715px;
-  height: 416px;
+  width: 654px;
+  height: 400px;
 }
+/* End Hero */
+
+/* Our Service */
+#our-service {
+  padding: 105px 206px 105px 206px;
+  gap: 86px;
+}
+
+.image-service {
+  width: 428px;
+}
+
+.image-service img {
+  width: 400px;
+}
+
+.desc h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.desc p {
+  font-size: 14px;
+}
+/* End Our Service */
+
+/* Why Us */
+#why-us {
+  padding: 0 136px 0 136px;
+}
+
+#why-us h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#why-us p {
+  font-size: 14px;
+}
+
+.card {
+  padding: 24px;
+  height: fit-content;
+}
+
+.card h3 {
+  font-size: 16px;
+}
+
+.card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+}
+
+.list-item {
+  width: 1000px;
+  padding-bottom: 100px;
+}
+/* Why Us */
