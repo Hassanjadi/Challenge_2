@@ -10,18 +10,10 @@ body {
   font-family: "Helvetica";
 }
 
-/* Hero */
-#hero {
-  background-color: var(--limegreen01);
-}
-
-.hero-text h1 {
-  font-size: 36px;
+/* Header */
+#header h1 a {
+  font-size: 24px;
   font-weight: bold;
-}
-
-.nav-item {
-  font-size: 14px;
 }
 
 button {
@@ -32,52 +24,70 @@ button {
   color: #ffffff;
 }
 
-.hero-text p {
+/* Header */
+
+/* Hero Section */
+#hero {
+  background-color: var(--limegreen01);
+  padding-top: 96px;
+}
+
+#hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.nav-item {
+  font-size: 14px;
+}
+
+#hero button {
+  background-color: var(--limegreen);
+  width: 140px;
+  height: 36px;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 0;
+  color: #ffffff;
+}
+
+#hero p {
   font-size: 14px;
   width: 468px;
 }
 
-.hero-img {
+#hero img {
   display: flex;
   height: 437px;
   align-items: end;
 }
 
-.hero-img img {
-  width: 654px;
+#hero .hero-img img {
+  width: 658px;
   height: 400px;
 }
 /* End Hero */
 
 /* Our Service */
-#our-service {
-  padding: 105px 206px 105px 206px;
-  gap: 86px;
-}
-
-.image-service {
+#service .image-service {
   width: 428px;
 }
 
-.image-service img {
+#service .image-service img {
   width: 400px;
 }
 
-.desc h2 {
+#service h2 {
   font-size: 24px;
   font-weight: bold;
 }
 
-.desc p {
+#service p {
   font-size: 14px;
 }
 /* End Our Service */
 
 /* Why Us */
-#why-us {
-  padding: 0 136px 0 136px;
-}
-
 #why-us h2 {
   font-size: 24px;
   font-weight: bold;
@@ -89,7 +99,8 @@ button {
 
 .card {
   padding: 24px;
-  height: fit-content;
+  width: 268px;
+  height: 196px;
 }
 
 .card h3 {
@@ -101,9 +112,151 @@ button {
   height: 32px;
   margin-bottom: 16px;
 }
-
-.list-item {
-  width: 1000px;
-  padding-bottom: 100px;
-}
 /* Why Us */
+
+/* Testimonial */
+#testimonial {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+#testimonial h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#testimonial p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.card-testi {
+  background-color: var(--limegreen01);
+  padding: 0 46px 0 46px;
+  border-radius: 8px;
+  width: 700px;
+  height: 270px;
+}
+
+.card-testi img {
+  width: 80px;
+  height: 80px;
+}
+
+.rate img {
+  width: 16px;
+  height: 16px;
+}
+
+.rate p {
+  font-size: 14px;
+}
+/* End Testimonial */
+
+/* cta banner */
+
+#cta .banner {
+  height: 326px;
+  background-color: var(--primary);
+  border-radius: 24px;
+}
+
+.banner h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.banner p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+#cta button {
+  background-color: var(--limegreen);
+  width: 140px;
+  height: 36px;
+  font-size: 14px;
+  padding: 6px 12px;
+  border: 0;
+  color: #ffffff;
+}
+
+/*--------------------------------------------------------------
+# Frequently Asked Questions
+--------------------------------------------------------------*/
+.faq .section-title h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.faq .section-title p {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.faq .faq-list ul {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li + li {
+  margin-top: 15px;
+}
+
+.faq .faq-list li {
+  padding: 20px;
+  border: 1px solid #d4d4d4;
+  border-radius: 4px;
+  position: relative;
+}
+
+.faq .faq-list a {
+  display: block;
+  position: relative;
+  font-size: 14px;
+  font-weight: 300;
+  outline: none;
+  cursor: pointer;
+  color: var(--nautral);
+  text-decoration: none;
+}
+
+.faq .faq-list .icon-show,
+.faq .faq-list .icon-close {
+  font-size: 24px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list a.collapsed {
+  color: var(--neutral);
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.faq .faq-list a.collapsed .icon-show {
+  display: inline-block;
+}
+
+.faq .faq-list a.collapsed .icon-close {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .faq .faq-list {
+    padding: 0;
+  }
+}
