@@ -22,9 +22,9 @@
 
   <body>
     <!-- Header -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="header fixed-top">
       <div class="container d-flex align-items-center justify-content-between">
-        <h1><a class="navbar-brand me-auto" href="#header">RentalCare</a></h1>
+        <h1><a class="navbar-brand me-auto" href="#hero">RentalCare</a></h1>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg">
             <button
@@ -64,7 +64,7 @@
     <!-- End Header -->
 
     <!-- Hero Section -->
-    <section id="hero" class="d-flex align-items-center">
+    <section id="hero" class="hero d-flex align-items-center">
       <div class="container">
         <div class="row">
             <div class="col-6 d-flex flex-column justify-content-center">
@@ -89,13 +89,13 @@
 
     <main id="main">
       <!-- Our Service -->
-      <section id="service" class="service my-5">
+      <section id="service" class="service">
       <div class="container">
         <div class="row d-flex justify-content-between px-5">
           <div class="col-lg-6 d-flex image-service">
             <img src="./assets/img_service.png" alt="image our service" />
           </div>
-          <div class="col-lg-6 d-flex flex-column">
+          <div class="col-lg-6 d-flex flex-column gap-3">
             <h2>Best Car Rental for any kind of trip in Bali!</h2>
             <p>
               Sewa mobil di Reog World bersama Binar Car Rental jaminan harga lebih
@@ -103,27 +103,27 @@
               pelayanan terbaik untuk perjalanan wisata, bisnis, wedding, meeting,
               dll.
             </p>
-            <p>
-              <img src="./assets/checklist.png" alt="checklist" />Sewa Mobil Dengan Supir di Bali 12 Jam
-            </p>
-            <p>
+            <div class="d-flex align-items-center gap-3">
               <img src="./assets/checklist.png" alt="checklist" />
-              Sewa Mobil Lepas Kunci di Bali 24 Jam
-            </p>
-            <p>
+              <p>Sewa Mobil Dengan Supir di Bali 12 Jam</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
               <img src="./assets/checklist.png" alt="checklist" />
-              Sewa Mobil Jangka Panjang Bulanan
-            </p>
-            <p>
+              <p>Sewa Mobil Lepas Kunci di Bali 24 Jam</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
               <img src="./assets/checklist.png" alt="checklist" />
-              Gratis Antar - Jemput Mobil di Bandara
-            </p>
-            <p>
+              <p>Sewa Mobil Jangka Panjang Bulanan</p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
               <img src="./assets/checklist.png" alt="checklist" />
-              Layanan Airport Transfer / Drop In Out
-            </p>
-            <div class=""></div>
-          </div>
+              <p>Gratis Antar - Jemput Mobil di Bandara </p>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <img src="./assets/checklist.png" alt="checklist" />
+              <p>Layanan Airport Transfer / Drop In Out </p>
+            </div>
+          </divcol>
         </div>
       </div>
       </section>
@@ -131,7 +131,7 @@
 
       <!-- Why Us -->
       <section id="why-us" class="why-us">
-        <div class="container py-5">
+        <div class="container">
           <div class="section-title">
             <h2>Why US?</h2>
             <p>Mengapa harus pilih Binar Car Rental?</p>
@@ -177,20 +177,65 @@
       <!-- End Why Us -->
 
       <!-- Testimonial -->
-      <section id="testimonial" class="testimonial">
+      <div id="testimonial" class="testimonial overflow-hidden">
         <div class="container">
-          <div class="text-center">
+
+          <div class="section-title text-center">
             <h2>Testimonial</h2>
             <p>Berbagai review positif dari para pelanggan kami.</p>
           </div>
+
         </div>
-            <div class="col-12 d-flex justify-content-center gap-5">
-              <!-- Card 1 -->
+
+        <div class="container d-flex justify-content-center">
+          <div class="testimonial-slider">
+
+            <div class="swipper-wrapper d-flex gap-3 justify-content-center">
               <div class="card-testi d-flex gap-5 align-items-center">
                 <div>
                   <img src="./assets/img_photo.png" />
                 </div>
+                <div class="testi">
+                  <div class="rate">
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                  </div>
+                  <div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                    </p>
+                    <p class="fw-bold">John Dee 32, Bromo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-testi d-flex gap-5 align-items-center">
                 <div>
+                  <img src="./assets/img_photo.png" />
+                </div>
+                <div class="testi">
+                  <div class="rate">
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                    <img src="./assets/Star.png" />
+                  </div>
+                  <div>
+                    <p>
+                      “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod”
+                    </p>
+                    <p class="fw-bold">John Dee 32, Bromo</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-testi d-flex gap-5 align-items-center">
+                <div>
+                  <img src="./assets/img_photo.png" />
+                </div>
+                <div class="testi">
                   <div class="rate">
                     <img src="./assets/Star.png" />
                     <img src="./assets/Star.png" />
@@ -207,19 +252,24 @@
                 </div>
               </div>
             </div>
+            <div class="pagination d-flex justify-content-center gap-3 mt-4">
+              <div class="prev"><a href="#"><i data-feather="chevron-left"></i></a></div>
+              <div class="next"><a href="#"><i data-feather="chevron-right"></i></a></div>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- End Testimonial -->
+      </section><!-- End Testimonial -->
 
       <!-- Cta Bannner -->
-      <section id="cta" class="cta my-5">
+      <section id="cta" class="cta">
         <div class="container">
           <div class="row">
-            <div class="banner d-flex flex-column justify-content-center align-items-center gap-3">
-              <h2>Sewa Mobil di Bali Sekarang</h2>
-              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
-              <button>Mulai Sewa Mobil</button>
+            <div class="col-lg-12">
+              <div class="banner d-flex flex-column justify-content-center align-items-center gap-3">
+                <h2>Sewa Mobil di Bali Sekarang</h2>
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br> tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>Mulai Sewa Mobil</button>
+              </div>
             </div>
           </div>
         </div>
@@ -227,7 +277,7 @@
       <!-- End Cta Bannner -->
 
       <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq py-5">
+    <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
 <div class="row">
 
@@ -240,7 +290,7 @@
     <ul>
       <li>
         <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Apa saja syarat yang dibutuhkan? <i data-feather="chevron-down" class="icon-show"></i><i data-feather="chevron-up" class="icon-close"></i></a>
-        <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+        <div id="faq-list-1" class="collapse" data-bs-parent=".faq-list">
           <p>
             Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
           </p>
@@ -290,10 +340,35 @@
     <!-- End Frequently Asked Questions Section -->
     </main>
 
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer py-5">
       <div class="container">
         <div class="row">
-
+<div class="address col-3">
+<p>Jalan Suroyo No. 161 Mayangan Kota Probolonggo 672000</p>
+<p>binarcarrental@gmail.com</p>
+<p>081-233-334-808</p>
+</div>
+<div class="menu col-3 d-flex flex-column gap-3">
+  <a href="#service">Our Service</a>
+  <a href="#why-us">Why Us</a>
+  <a href="#testimonial">Testimonial</a>
+  <a href="#service">FAQ</a>
+</div>
+<div class="account col-3">
+  <p>Connect with us</p>
+  <div class="social-media d-flex gap-2">
+<a href=""><i data-feather="facebook"></i></a>
+<a href=""><i data-feather="instagram"></i></a>
+<a href=""><i data-feather="mail"></i></a>
+<a href=""><i data-feather="twitch"></i></a>
+  </div>
+</div>
+<div class="copyright col-3">
+  <p>Copyright Binar 2022</p>
+  <div>
+    <img src="" alt="">
+  </div>
+</div>
         </div>
       </div>
     </footer>

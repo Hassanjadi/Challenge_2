@@ -6,12 +6,11 @@
 }
 
 body {
-  font-size: 1.2rem;
   font-family: "Helvetica";
 }
 
 /* Header */
-#header h1 a {
+.header h1 a {
   font-size: 24px;
   font-weight: bold;
 }
@@ -24,24 +23,22 @@ button {
   color: #ffffff;
 }
 
-/* Header */
-
-/* Hero Section */
-#hero {
-  background-color: var(--limegreen01);
-  padding-top: 96px;
-}
-
-#hero h1 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
 .nav-item {
   font-size: 14px;
 }
 
-#hero button {
+/* Hero Section */
+.hero {
+  background-color: var(--limegreen01);
+  padding-top: 100px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero button {
   background-color: var(--limegreen);
   width: 140px;
   height: 36px;
@@ -51,49 +48,58 @@ button {
   color: #ffffff;
 }
 
-#hero p {
+.hero p {
   font-size: 14px;
   width: 468px;
 }
 
-#hero img {
+.hero img {
   display: flex;
   height: 437px;
   align-items: end;
 }
 
-#hero .hero-img img {
+.hero .hero-img img {
   width: 658px;
   height: 400px;
 }
 /* End Hero */
 
 /* Our Service */
-#service .image-service {
+.service {
+  padding-top: 100px;
+}
+
+.service .image-service {
   width: 428px;
 }
 
-#service .image-service img {
+.service .image-service img {
   width: 400px;
 }
 
-#service h2 {
+.service h2 {
   font-size: 24px;
   font-weight: bold;
 }
 
-#service p {
+.service p {
   font-size: 14px;
+  margin: 0;
 }
 /* End Our Service */
 
 /* Why Us */
-#why-us h2 {
+.why-us {
+  padding-top: 100px;
+}
+
+.why-us h2 {
   font-size: 24px;
   font-weight: bold;
 }
 
-#why-us p {
+.why-us p {
   font-size: 14px;
 }
 
@@ -115,27 +121,30 @@ button {
 /* Why Us */
 
 /* Testimonial */
-#testimonial {
+.testimonial {
   width: 100%;
-  margin-bottom: 100px;
+  padding-top: 100px;
 }
 
-#testimonial h2 {
+.testimonial h2 {
   font-size: 24px;
   font-weight: 700;
 }
 
-#testimonial p {
+.testimonial p {
   font-size: 14px;
   font-weight: 300;
 }
 
 .card-testi {
   background-color: var(--limegreen01);
-  padding: 0 46px 0 46px;
+  padding: 0 36px 0 36px;
   border-radius: 8px;
-  width: 700px;
   height: 270px;
+}
+
+.testi {
+  width: 415px;
 }
 
 .card-testi img {
@@ -151,11 +160,38 @@ button {
 .rate p {
   font-size: 14px;
 }
+
+.pagination .prev {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #d4d4d4;
+  border-radius: 50%;
+}
+
+.pagination .next {
+  width: 32px;
+  height: 32px;
+  background: var(--limegreen);
+  border-radius: 50%;
+}
+
+.pagination .prev a {
+  color: var(--neutral);
+  margin-left: 2px;
+}
+
+.pagination .next a {
+  color: #fff;
+  margin-left: 4px;
+}
 /* End Testimonial */
 
 /* cta banner */
+.cta {
+  padding-top: 100px;
+}
 
-#cta .banner {
+.cta .banner {
   height: 326px;
   background-color: var(--primary);
   border-radius: 24px;
@@ -173,7 +209,7 @@ button {
   color: #ffffff;
 }
 
-#cta button {
+.cta button {
   background-color: var(--limegreen);
   width: 140px;
   height: 36px;
@@ -186,6 +222,10 @@ button {
 /*--------------------------------------------------------------
 # Frequently Asked Questions
 --------------------------------------------------------------*/
+.faq {
+  padding: 100px;
+}
+
 .faq .section-title h2 {
   font-size: 24px;
   font-weight: 700;
@@ -259,4 +299,58 @@ button {
   .faq .faq-list {
     padding: 0;
   }
+}
+
+/* Footer */
+.footer .address p {
+  color: var(--neutral);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer .menu a {
+  color: var(--neutral);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.footer .account p {
+  color: var(--neutral);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer .account .social-media a {
+  font-size: 18px;
+  background: var(--primary);
+  color: #fff;
+  padding: 5px 0;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+}
+
+.footer .copyright p {
+  color: var(--neutral);
+  font-family: Helvetica;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.footer .copyright img {
+  padding: 15px 50px 15px 50px;
+  background-color: var(--primary);
 }
