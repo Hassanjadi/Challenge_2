@@ -10,9 +10,10 @@ body {
 }
 
 /* Header */
-.header h1 a {
-  font-size: 24px;
-  font-weight: bold;
+.header span {
+  width: 100px;
+  height: 34px;
+  background-color: var(--primary);
 }
 
 .header button {
@@ -23,14 +24,16 @@ body {
   color: #ffffff;
 }
 
-.nav-item {
+.header .nav-item {
   font-size: 14px;
+  font-weight: 400px;
 }
 
 /* Hero Section */
 .hero {
   background-color: var(--limegreen01);
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .hero h1 {
@@ -60,7 +63,7 @@ body {
 }
 
 .hero .hero-img img {
-  width: 658px;
+  width: 670px;
   height: 400px;
 }
 /* End Hero */
@@ -103,17 +106,17 @@ body {
   font-size: 14px;
 }
 
-.card {
+.why-us .card {
   padding: 24px;
   width: 268px;
   height: 196px;
 }
 
-.card h3 {
+.why-us .card h3 {
   font-size: 16px;
 }
 
-.card img {
+.why-us .card img {
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
@@ -136,70 +139,33 @@ body {
   font-weight: 300;
 }
 
-.card-testi {
+.testimonial .card-testi {
   background-color: var(--limegreen01);
   padding: 0 36px 0 36px;
   border-radius: 8px;
   height: 270px;
-  margin: 0 0.5em;
+  width: 619px;
 }
 
-.testi {
+.testimonial .desc-testi {
   width: 415px;
 }
 
-.card-testi img {
+.testimonial .card-testi img {
   width: 80px;
   height: 80px;
 }
 
-.rate img {
+.testimonial .rate img {
   width: 16px;
   height: 16px;
 }
 
-.rate p {
+.testimonial .rate p {
   font-size: 14px;
 }
 
-.pagination .prev {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #d4d4d4;
-  border-radius: 50%;
-}
-
-.pagination .next {
-  width: 32px;
-  height: 32px;
-  background: var(--limegreen);
-  border-radius: 50%;
-}
-
-.pagination .prev a {
-  color: var(--neutral);
-  margin-left: 2px;
-}
-
-.pagination .next a {
-  color: #fff;
-  margin-left: 4px;
-}
-
-@media screen and (min-width: 576px) {
-  .carousel-inner {
-    display: flex;
-    justify-content: center;
-  }
-
-  .carousel-item {
-    display: block;
-    margin-right: 0;
-    flex: 0 0 calc(100% / 3);
-  }
-}
-
-.tombol .prev button {
+.testimonial .pagination .prev button {
   height: 32px;
   width: 32px;
   border: 1px solid #d4d4d4;
@@ -207,7 +173,7 @@ body {
   background-color: #fff;
 }
 
-.tombol .next button {
+.testimonial .pagination .next button {
   height: 32px;
   width: 32px;
   border: 0;
@@ -215,10 +181,9 @@ body {
   background-color: var(--limegreen);
   color: #fff;
 }
-
 /* End Testimonial */
 
-/* cta banner */
+/* CTA */
 .cta {
   padding-top: 100px;
 }
@@ -231,13 +196,13 @@ body {
   border-radius: 24px;
 }
 
-.banner h2 {
+.cta .banner h2 {
   font-size: 36px;
   font-weight: 700;
   color: #ffffff;
 }
 
-.banner p {
+.cta .banner p {
   font-size: 14px;
   font-weight: 300;
   color: #ffffff;
@@ -252,10 +217,9 @@ body {
   border: 0;
   color: #ffffff;
 }
+/* End CTA */
 
-/*--------------------------------------------------------------
-# Frequently Asked Questions
---------------------------------------------------------------*/
+/* Frequently Asked Questions */
 .faq {
   padding: 100px;
 }
@@ -334,6 +298,7 @@ body {
     padding: 0;
   }
 }
+/* End Frequently Asked Questions */
 
 /* Footer */
 .footer .address p {
@@ -388,3 +353,4 @@ body {
   padding: 15px 50px 15px 50px;
   background-color: var(--primary);
 }
+/* End Footer */
