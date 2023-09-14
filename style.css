@@ -15,7 +15,7 @@ body {
   font-weight: bold;
 }
 
-button {
+.header button {
   background-color: var(--limegreen);
   font-size: 14px;
   padding: 6px 12px;
@@ -141,6 +141,7 @@ button {
   padding: 0 36px 0 36px;
   border-radius: 8px;
   height: 270px;
+  margin: 0 0.5em;
 }
 
 .testi {
@@ -184,6 +185,37 @@ button {
   color: #fff;
   margin-left: 4px;
 }
+
+@media screen and (min-width: 576px) {
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100% / 3);
+  }
+}
+
+.tombol .prev button {
+  height: 32px;
+  width: 32px;
+  border: 1px solid #d4d4d4;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.tombol .next button {
+  height: 32px;
+  width: 32px;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--limegreen);
+  color: #fff;
+}
+
 /* End Testimonial */
 
 /* cta banner */
@@ -192,6 +224,8 @@ button {
 }
 
 .cta .banner {
+  display: flex;
+  align-items: center;
   height: 326px;
   background-color: var(--primary);
   border-radius: 24px;
