@@ -10,13 +10,13 @@ body {
 }
 
 /* Header */
-.header span {
+.header .logo {
   width: 100px;
   height: 34px;
   background-color: var(--primary);
 }
 
-.header button {
+.header .register {
   background-color: var(--limegreen);
   font-size: 14px;
   padding: 6px 12px;
@@ -93,10 +93,6 @@ body {
 /* End Our Service */
 
 /* Why Us */
-.why-us {
-  padding-top: 100px;
-}
-
 .why-us h2 {
   font-size: 24px;
   font-weight: bold;
@@ -108,8 +104,8 @@ body {
 
 .why-us .card {
   padding: 24px;
-  width: 268px;
   height: 196px;
+  margin-bottom: 24px;
 }
 
 .why-us .card h3 {
@@ -126,7 +122,6 @@ body {
 /* Testimonial */
 .testimonial {
   width: 100%;
-  padding-top: 100px;
 }
 
 .testimonial h2 {
@@ -139,7 +134,18 @@ body {
   font-weight: 300;
 }
 
-.testimonial .card-testi {
+.slide-container {
+  background-color: #d4d4d4;
+  padding: 40px 40px;
+}
+
+.cardd {
+  background-color: var(--limegreen01);
+  border-radius: 24px;
+  width: 600px;
+}
+
+/* .testimonial .card-testi {
   background-color: var(--limegreen01);
   padding: 0 36px 0 36px;
   border-radius: 8px;
@@ -163,7 +169,7 @@ body {
 
 .testimonial .rate p {
   font-size: 14px;
-}
+} */
 
 .testimonial .pagination .prev button {
   height: 32px;
@@ -184,13 +190,8 @@ body {
 /* End Testimonial */
 
 /* CTA */
-.cta {
-  padding-top: 100px;
-}
-
 .cta .banner {
-  display: flex;
-  align-items: center;
+  padding: 16px;
   height: 326px;
   background-color: var(--primary);
   border-radius: 24px;
@@ -200,12 +201,14 @@ body {
   font-size: 36px;
   font-weight: 700;
   color: #ffffff;
+  text-align: center;
 }
 
 .cta .banner p {
   font-size: 14px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
 }
 
 .cta button {
@@ -221,7 +224,7 @@ body {
 
 /* Frequently Asked Questions */
 .faq {
-  padding: 100px;
+  padding-top: 100px;
 }
 
 .faq .section-title h2 {
@@ -315,7 +318,7 @@ body {
   font-family: Helvetica;
   font-size: 14px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 20px;
   text-decoration: none;
 }
@@ -330,12 +333,9 @@ body {
 }
 
 .footer .account .social-media a {
-  font-size: 18px;
   background: var(--primary);
   color: #fff;
-  padding: 5px 0;
   border-radius: 50%;
-  text-align: center;
   width: 36px;
   height: 36px;
 }
