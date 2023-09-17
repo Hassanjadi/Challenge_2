@@ -17,7 +17,11 @@
     <script src="https://unpkg.com/feather-icons"></script>
 
     <!-- Swipper CSS -->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -235,10 +239,27 @@
           </div>
         </div>
 
-        <div class="slide-container swiper">
-          <div class="slide-content">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+            <div class="swiper-slide">Slide 4</div>
+            <div class="swiper-slide">Slide 5</div>
+            <div class="swiper-slide">Slide 6</div>
+            <div class="swiper-slide">Slide 7</div>
+            <div class="swiper-slide">Slide 8</div>
+            <div class="swiper-slide">Slide 9</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- <div class="slide-container">
+          <div class="slide-content swiper mySwiper">
             <div class="card-wrapper swiper-wrapper">
-              <!-- Card 1 -->
               <div class="cardd d-lg-flex p-sm-3 border swiper-slide">
                 <div
                   class="image-content d-flex justify-content-center align-items-center p-lg-5"
@@ -272,7 +293,7 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-pagination"></div>
-        </div>
+        </div> -->
       </section>
       <!-- End Testimonial -->
 
@@ -483,11 +504,27 @@
     </footer>
     <!-- End Footer -->
 
-    <!-- Main Js -->
-    <script src="./assets/js/script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-    <!-- Swipper Js -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 
     <!-- Bootstrap Js -->
     <script
