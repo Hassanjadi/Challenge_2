@@ -10,7 +10,11 @@ body {
 }
 
 /* Header */
-.header .logo {
+.header {
+  margin: 16px 0 16px 0;
+}
+
+.header .navbar-brand {
   width: 100px;
   height: 34px;
   background-color: var(--primary);
@@ -19,9 +23,25 @@ body {
 .header .register {
   background-color: var(--limegreen);
   font-size: 14px;
+  font-weight: 600;
   padding: 6px 12px;
   border: 0;
+  border-radius: 2px;
   color: #ffffff;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    max-width: 50%;
+    backdrop-filter: blur(20px);
+  }
+
+  .register {
+    display: flex;
+    padding: 8px 12px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .header .nav-item {
@@ -58,9 +78,23 @@ body {
   background-color: var(--limegreen);
 }
 
-
 .hero-img {
-  margin-top: 220px
+  margin-top: 250px
+}
+
+@media (min-width: 991px) {
+  .hero {
+    background-color: var(--limegreen01);
+    padding-top: 72px;
+    position: relative;
+    height: 500px;
+  }
+
+  .hero-desc {
+    height: 428px;
+    display: flex;
+    align-items: center;
+  }
 }
 /* End Hero */
 
@@ -112,17 +146,22 @@ body {
   line-height: 20px;
 }
 
-.why-us .card {
+.why-us .whyus-card {
   padding: 24px;
-  height: 196px;
   margin-bottom: 24px;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
 }
 
-.why-us .card h3 {
+.why-us .whyus-card h3 {
   font-size: 16px;
 }
 
-.why-us .card img {
+.why-us .whyus-card p {
+  font-size: 14px;
+}
+
+.why-us .whyus-card img {
   width: 32px;
   height: 32px;
   margin-bottom: 16px;
@@ -156,7 +195,7 @@ body {
   padding: 40px 32px;
   border-radius: 8px;
   background: #F1F3FF;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15); */
 }
 
 .testimonial .desc-testi p {
@@ -169,56 +208,30 @@ body {
 }
 
 .testimonial .desc-testi span {
-  color: #000;
   font-family: Helvetica;
-  font-size: 14px;
   font-style: normal;
-  font-weight: 600;
   line-height: 20px;
-}
-
-/* .testimonial .card-testi {
-  background-color: var(--limegreen01);
-  padding: 0 36px 0 36px;
-  border-radius: 8px;
-  height: 270px;
-  width: 619px;
-}
-
-.testimonial .desc-testi {
-  width: 415px;
-}
-
-.testimonial .card-testi img {
-  width: 80px;
-  height: 80px;
-}
-
-.testimonial .rate img {
-  width: 16px;
-  height: 16px;
-}
-
-.testimonial .rate p {
+  font-weight: 600;
   font-size: 14px;
-} */
+  color: #000;
+}
 
-/* .testimonial .pagination .prev button {
+.testimonial .pagination .prev {
+  border: 1px solid #C4C4C4;
+  border-radius: 50%;
   height: 32px;
   width: 32px;
-  border: 1px solid #d4d4d4;
-  border-radius: 50%;
-  background-color: #fff;
 }
 
-.testimonial .pagination .next button {
+.testimonial .pagination .next {
+  background-color: var(--limegreen);
+  border-radius: 50%;
+  flex-shrink: 0;
+  color: #fff;
   height: 32px;
   width: 32px;
   border: 0;
-  border-radius: 50%;
-  background-color: var(--limegreen);
-  color: #fff;
-} */
+}
 /* End Testimonial */
 
 /* CTA */
@@ -291,6 +304,12 @@ body {
   padding: 8px 8px;;
   border: 1px solid #d4d4d4;
   border-radius: 4px;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  background: transparent;
+  border: 0;
 }
 /* End Frequently Asked Questions */
 
