@@ -41,6 +41,11 @@ body {
     padding: 8px 12px;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
+  }
+
+  .navbar-toggler-icon {
+    background: #222222;
   }
 }
 
@@ -52,7 +57,7 @@ body {
 /* Hero Section */
 .hero {
   background-color: var(--limegreen01);
-  padding-top: 72px;
+  padding-top: 100px;
   position: relative;
 }
 
@@ -79,7 +84,7 @@ body {
 }
 
 .hero-img {
-  margin-top: 250px
+  margin-top: 220px;
 }
 
 @media (min-width: 991px) {
@@ -110,6 +115,8 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .service p {
@@ -119,6 +126,13 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 20px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 991px) {
+  .service {
+    padding-top: 100px;
+  }
 }
 /* End Our Service */
 
@@ -127,13 +141,18 @@ body {
   margin-top: 60px;
 }
 
-.why-us h2 {
+.section-title {
+  margin-bottom: 24px;
+}
+
+.why-us .section-title h2 {
   color: var(--neutral);
   text-align: center;
   font-family: Helvetica;
   font-size: 24px;
   font-weight: 700;
   line-height: 36px;
+  margin-bottom: 16px;
 }
 
 .why-us .section-title p {
@@ -166,11 +185,22 @@ body {
   height: 32px;
   margin-bottom: 16px;
 }
+
+@media (min-width: 991px) {
+  .why-us {
+    padding-top: 100px;
+  }
+}
 /* Why Us */
 
 /* Testimonial */
 .testimonial {
   margin-top: 60px;
+  /* position: relative; */
+}
+
+.testimonial .slide-container {
+  width: 1500px;
 }
 
 .testimonial h2 {
@@ -192,10 +222,11 @@ body {
 }
 
 .testimonial .card-testi {
+  margin: 0 12px;
   padding: 40px 32px;
   border-radius: 8px;
   background: #F1F3FF;
-  /* box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15); */
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial .desc-testi p {
@@ -216,14 +247,15 @@ body {
   color: #000;
 }
 
-.testimonial .pagination .prev {
+.testimonial .prev {
   border: 1px solid #C4C4C4;
   border-radius: 50%;
   height: 32px;
   width: 32px;
+  background: #fff;
 }
 
-.testimonial .pagination .next {
+.testimonial .next {
   background-color: var(--limegreen);
   border-radius: 50%;
   flex-shrink: 0;
@@ -232,6 +264,60 @@ body {
   width: 32px;
   border: 0;
 }
+
+@media (min-width: 991px) {
+  .testimonial {
+    padding-top: 100px;
+  }
+
+  .slide-container {
+    max-width: 100%;
+    width: 100%;
+    background-color: grey;
+    padding: 40px;
+  }
+
+  .slide-content {
+    margin: 0 40px;
+  }
+
+  /* .testimonial .container {
+    margin: 0 0;
+  }
+
+  .carousel-inner {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/3);
+  } */
+
+  .card-testi {
+    display: flex;
+    align-items: center;
+    width: 619px;
+    margin: 0 16px;
+    gap: 46px;
+  }
+
+  .images-testi{
+    width: 80px;
+    height: 80px;
+  }
+
+  .desc-testi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
 /* End Testimonial */
 
 /* CTA */
@@ -271,6 +357,22 @@ body {
   font-weight: 700;
   line-height: 20px;
 }
+
+@media (min-width: 991px) {
+  .cta {
+    padding-top: 50px;
+  }
+
+  .cta .banner-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta .banner-desc p {
+    width: 468px;
+  }
+}
 /* End CTA */
 
 /* Frequently Asked Questions */
@@ -285,6 +387,7 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: 36px;
+  text-align: center;
 }
 
 .faq .section-title p {
@@ -294,6 +397,7 @@ body {
   font-style: normal;
   font-weight: 300;
   line-height: 20px;
+  text-align: center;
 }
 
 .accordion-item {
@@ -310,6 +414,15 @@ body {
   box-shadow: none;
   background: transparent;
   border: 0;
+}
+
+@media (min-width: 991px) {
+  .faq {
+    padding-top: 100px;
+  }
+  .faq .section-title h2 {
+    text-align: start;
+  }
 }
 /* End Frequently Asked Questions */
 
@@ -366,5 +479,11 @@ body {
 .footer .copyright img {
   padding: 15px 50px 15px 50px;
   background-color: var(--primary);
+}
+
+@media (min-width: 991px) {
+  .footer {
+    padding-top: 50px;
+  }
 }
 /* End Footer */
